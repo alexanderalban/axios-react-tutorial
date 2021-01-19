@@ -25,7 +25,11 @@ class App extends Component {
   return (
     <div className="App">
       <header className="App-header">
-        {/*map of this.state.arrayOfBeer */}
+    <ol>{this.state.arrayOfBeer.map((beer, index) => {
+      return (
+        <li key={index}>{beer.name}</li>
+      )
+    })}</ol>
       </header>
     </div>
   );
