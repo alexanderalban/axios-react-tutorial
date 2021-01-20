@@ -5,7 +5,7 @@ section {
 
 li {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 500pt, repeat(2, 1fr);
     grid-template-rows: repeat(3, 75px);
     list-style: none;
 }
@@ -14,20 +14,20 @@ img {
     display: grid;
     grid-column: 1 / 2;
     grid-row: 1 / 4;
-    object-fit: cover;
-    height: 200px;
+    max-height: 200px;
+    padding: 100px;
 }
 
 h3, h4, p {
     display: grid;
     grid-column: 2 / 4;
     max-height: 100px;
-    object-fit: cover;
     text-align: left;
 }
 
 h3 {
     font-size: 25px;
+    grid-row: 1 /2;
 }
 
 h4 {

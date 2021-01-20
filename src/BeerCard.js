@@ -6,7 +6,7 @@ function  BeerCard(props) {
         <section>
             <li>
                 <img src={image_url} alt={"beer logo"}></img>
-                <h3>{name} <span>{first_brewed}</span> </h3>
+                <h3>{name}, {first_brewed} </h3>
                 <h4>{tagline}</h4>
                 <p><span>{abv}</span> {description}</p>
                 <br></br>
