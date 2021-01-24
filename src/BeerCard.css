@@ -1,21 +1,27 @@
 section {
     max-width: 1000px;
     height: 400px;
+    margin-bottom: 25px;
+    background-color: rgb(144,101,71, .75);
+    box-shadow: -0pt 1.5pt 6pt 5pt black;
 }
 
 li {
     display: grid;
     grid-template-columns: 500pt, repeat(2, 1fr);
-    grid-template-rows: repeat(3, 75px);
+    grid-template-rows: repeat(3, 100px);
     list-style: none;
 }
 
 img {
     display: grid;
     grid-column: 1 / 2;
-    grid-row: 1 / 4;
-    max-height: 200px;
+    grid-row: 0 / 5;
+    max-height: 350px;
     padding: 100px;
+    padding-right: 20px;
+    align-self: flex-start;
+    padding-top: 10px;
 }
 
 h3, h4, p {
@@ -36,4 +42,13 @@ h4 {
 
 p {
     font-size: 15px;
+}
+
+.heart {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    height: 20px;
+    align-self: flex-end;
+    padding-bottom: 20px;
 }

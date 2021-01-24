@@ -24,10 +24,13 @@ class App extends Component {
       })
   }
 
+
+
   render() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Axios Beer Selector</h1>
     <ol>{this.state.arrayOfBeer.map((beer, index) => {
       return (
         <BeerCard key={index} 
